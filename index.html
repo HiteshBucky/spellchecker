@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon</title>
-    <link rel="stylesheet" href="app.css">
 </head>
 
 <style>
@@ -48,18 +47,16 @@
   }
 
 </style>
-<body>
-    <div class="container">
-      <center> 
-          <div class="row">
+<body style="background-color: #f5fdff">
+    <center><h1 style="margin-top: 5%">Spell Checker</h1></center>
+    <div class="container" style="width: 50%; margin: auto">
+      <div class="row">
         <input type="file" name="inputfile" id="inputfile">
-        <button onclick="readData()">Upload</button><br><br>
+        <button onclick="readData()">Upload</button>
+        <br><br>
         <pre id="filecontent"></pre> 
-        <menu id="contextMenu" class="context-menu" style="display:none">
-          
-        </menu>
+        <menu id="contextMenu" class="context-menu" style="display:none; background-color: grey"></menu>
       </div>
-        </center>
     </div>
 </body>
 <script src="script.js"></script>
